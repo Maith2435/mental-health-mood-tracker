@@ -1,4 +1,4 @@
-git add mood_tracker.pyimport streamlit as st
+import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
@@ -45,20 +45,15 @@ def detect_anomalies():
         return "Mood is stable. Keep it up!"
 
 # Streamlit UI
-st.title(" Mental Health Mood Tracker")
-
+st.title("Mental Health Mood Tracker")
 st.write("Log your daily mood and visualize patterns.")
-
 mood = st.slider("Rate your mood today (1 = low, 10 = high):", 1, 10, 5)
 note = st.text_input("Any notes? (optional)")
-
 if st.button("Submit"):
     add_entry(mood, note)
     st.success("Mood entry added!")
-
-st.header(" Mood Trend")
+st.header("Mood Trend")
 show_graph()
-
 st.header("Mood Analysis")
 insight = detect_anomalies()
 if insight:
