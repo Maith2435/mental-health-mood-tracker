@@ -26,6 +26,10 @@ mental-health-mood-tracker/
 ├── README.md
 └── mood_log.csv (optional)
 
+Here's the Sreamlit URL of my project:
+
+ URL: https://maith2435-mental-health-mood-tracker-mood-tracker-app-9z2jgm.streamlit.app/
+
   ![image](https://github.com/user-attachments/assets/2d1f644f-bdae-41da-838c-17d1c85581c0)
 
   ![image](https://github.com/user-attachments/assets/112ffd02-f9e4-4ff8-9a52-467c4512f552)
